@@ -145,20 +145,26 @@ npm install typescript ts-node-dev @types/node -D
 
 - @types/node: permite que o TypeScript entenda funções do Node
 
-### Passo 4: Instalar o Typescript ao projeto
-```bash
-npm install typescript ts-node-dev @types/node -D
-```
-- typescript: compilador TS
-
-- ts-node-dev: executa arquivos .ts sem precisar compilar
-
-- @types/node: permite que o TypeScript entenda funções do Node
-
-### Passo 5: Inicar o typescript
+### Passo 4: Inicar o typescript
 ```bash
 npx tsc --init
 ```
 - Isso fará com que o arquivo tsconfig.json seja criado
 
 
+### Passo 5: Editar o arquivo *package.json*
+```JSON
+"scripts": {
+    "start": "tsc && ts-node src/index.ts"
+}
+```
+### Passo 6: Criar a pasta src na raiz do projeto e o arquivo index.ts dentro da mesma
+- ./src/index.ts
+- Dentro do arquivo acrescentar o código abaixo:
+    ```JavaScript
+    console.log('Servidor rodando com Node.js e TypeScript!');
+    ```
+### Passo 7: Executar o comando abaixo para iniciar o projeto
+```bash
+    npm start
+```

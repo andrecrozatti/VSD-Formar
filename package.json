@@ -1,0 +1,32 @@
+{
+  "name": "vsd-formar",
+  "version": "1.0.0",
+  "description": "Api backend desenvolvida para o formar em parceria com o Vem Ser Dev",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "tsc && ts-node src/index.ts",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.3",
+    "eslint": "^9.25.1",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.31.1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
